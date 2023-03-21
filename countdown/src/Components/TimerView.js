@@ -45,10 +45,12 @@ const TimerView = () => {
   useEffect(() => {
     if (flag) {
       const interval = setInterval(() => {
-        if (parseInt(seconds) == 0 && parseInt(minutes) !== 0) {
+        if (parseInt(seconds) === 0 && parseInt(minutes) !== 0) {
           setSeconds((seconds) => seconds + 59);
           setMinutes((minutes) => minutes - 1);
-        } else if (parseInt(seconds) == 0 && parseInt(minutes) == 0) {
+        } else if (parseInt(seconds) === 0 && parseInt(minutes) === 0) {
+          alert("Time's Up!");
+          return reset();
         } else {
           setSeconds((seconds) => seconds - 1);
         }
@@ -72,7 +74,7 @@ const TimerView = () => {
           display: "flex",
           justifyContent: "center",
           marginTop: "50px",
-          marginBottom: "50px"
+          marginBottom: "50px",
         }}
       >
         <Typography variant="h3" component="h2">

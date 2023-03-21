@@ -1,0 +1,26 @@
+button {
+  background-color: transparent;
+  border: 1px;
+  outline: none;
+  cursor: pointer;
+}
+.on {
+  color: #000;
+}
+.off {
+  color: #ccc;
+}
+
+img {
+  height: 100%;
+  width: 300px;
+}
+
+textarea {
+  height: 100px;
+  width: 300px;
+}
+
+.App {
+  text-align: center;
+}
