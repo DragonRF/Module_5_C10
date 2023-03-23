@@ -1,6 +1,6 @@
 import './UserList.css'
 import {useState} from "react";
-import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
+import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import {
     Button,
 } from "@mui/material";
