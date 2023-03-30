@@ -1,0 +1,1 @@
+export const RECEIVE_STORIES = 'RECEIVE_STORIES'

@@ -77,7 +77,7 @@ function UserList() {
 
     const deleteUser = (id) => {
         // eslint-disable-next-line no-restricted-globals
-        if (confirm('Are you sure delete user?')) {
+        if (confirm('Are you sure delete users?')) {
             // tim index theo id;
             let newData = data.filter(user => {
                 return user.id !== id;

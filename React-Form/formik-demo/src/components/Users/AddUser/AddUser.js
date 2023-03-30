@@ -65,7 +65,7 @@ function AddUser(props) {
             name: "",
             email: "",
             phone: "",
-            role: "User",
+            role: "Users",
         },
         validationSchema: SignupSchema,
         onSubmit: values => {
@@ -87,7 +87,7 @@ function AddUser(props) {
                 open={props.open}
             >
                 <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
-                    User information
+                    Users information
                 </BootstrapDialogTitle>
 
                 <form onSubmit={formik.handleSubmit}>
@@ -157,13 +157,13 @@ function AddUser(props) {
                                     name="role"
                                     value={formik.values.role}
                                     onChange={formik.handleChange}
-                                    defaultValue="User"
+                                    defaultValue="Users"
                                 >
                                     <MenuItem value="Admin">
                                         Admin
                                     </MenuItem>
-                                    <MenuItem  value="User">
-                                        User
+                                    <MenuItem  value="Users">
+                                        Users
                                     </MenuItem>
 
                                 </TextField>
